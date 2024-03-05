@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Tours in India</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Book Tours in India</h1>
+  </header>
+  <form action="booking_process.php" method="post">
+    <label for="tour">Select Tour:</label>
+    <select id="tour" name="tour" required>
+      <option value="golden_triangle">Golden Triangle Tour</option>
+      <option value="backwaters">Kerala Backwaters Tour</option>
+      <option value="rajasthan">Rajasthan Heritage Tour</option>
+      <option value="ladakh">Ladakh Adventure Tour</option>
+    </select>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="phone">Your Phone:</label>
+    <input type="text" id="phone" name="phone" required>
+    <label for="date">Tour Date:</label>
+    <input type="date" id="date" name="date" required>
+    <input type="submit" value="Book Now">
+  </form>
+  <p align="center"><a href="paymentgateway.html">Click here to make payment</a></p>
+</body>
+</html>

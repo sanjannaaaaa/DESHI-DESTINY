@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{background-color: hwb(293 85% 9%);}
+    form{font-weight: 200; font-style: italic;text-align: center;font-size: 30px;}
+    p{font-weight: 200; font-style: italic;text-align: center;font-size: 60px;text-decoration: underline;}
+    h2{font-weight: 200; font-style: italic;text-align: center;font-size: 90px;text-decoration:underline;}
+  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourism Guide App</title>
+</head>
+<body>
+
+<h2>Welcome to our Tourism Guide App</h2>
+<p>Please select your interests:</p>
+
+<form action="/submit_interests" method="post"
+>
+  <input type="checkbox" id="sightseeing" name="interest" value="sightseeing">
+  <label for="sightseeing">Sightseeing</label><br>
+  
+  <input type="checkbox" id="hiking" name="interest" value="hiking">
+  <label for="hiking">Hiking</label><br>
+  
+  <input type="checkbox" id="beaches" name="interest" value="beaches">
+  <label for="beaches">Beaches</label><br>
+  
+  <input type="checkbox" id="cultural_sites" name="interest" value="cultural_sites">
+  <label for="cultural_sites">Cultural Sites</label><br>
+  
+  <input type="checkbox" id="shopping" name="interest" value="shopping">
+  <label for="shopping">Shopping</label><br>
+  <input type="checkbox" id="nightlife" name="interest" value="nightlife">
+  <label for="nightlife">Nightlife</label><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
